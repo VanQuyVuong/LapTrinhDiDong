@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.mytest"
+    namespace = "com.example.quyvuong_bt_chuyen_activity"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.example.mytest"
+        applicationId = "com.example.quyvuong_bt_chuyen_activity"
         minSdk = 26
         targetSdk = 36
         versionCode = 1

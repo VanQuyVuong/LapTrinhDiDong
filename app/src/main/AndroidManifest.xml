@@ -10,28 +10,26 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.MyTest">
+        android:theme="@style/Theme.QuyVuong_BT_CHUYEN_ACTIVITY">
+
+        <!-- Màn hình Login là màn hình chính -->
         <activity
-            android:name=".DetailsActivity"
-            android:exported="true" />
-        <activity
-            android:name=".TrangChuActivity"
-            android:exported="true" />
-        <activity
-            android:name=".DangKyActivity"
-            android:exported="true" />
-        <activity
-            android:name=".DangNhapActivity"
-            android:exported="true" />
-        <activity
-            android:name=".MainActivity"
+            android:name=".ActivityLogin"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Màn hình Profile, có khai báo cha để quay lại được -->
+        <activity
+            android:name=".ActivityProfile"
+            android:exported="false"
+            android:parentActivityName=".ActivityLogin">
+            <!-- Dòng này giúp Android biết màn hình cha là Login -->
+        </activity>
+
     </application>
 
 </manifest>

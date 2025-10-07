@@ -19,6 +19,6 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "MyTest"
+rootProject.name = "QuyVuong_BT_CHUYEN_ACTIVITY"
 include(":app")
  
